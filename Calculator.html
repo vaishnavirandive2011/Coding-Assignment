@@ -1,0 +1,83 @@
+<!DOCTYPE html> 
+<html> 
+
+<head> 
+	<title>Calculator</title> 
+
+	
+	<style> 
+		table { 
+			border: 1px solid black; 
+			margin-left: auto; 
+			margin-right: auto; 
+		} 
+        body{
+    background-color: #495250;
+    display: grid;
+    height: 100vh;
+    place-items: center;
+ }
+		
+		input[type="button"] { 
+			width: 100%; 
+			padding: 20px 40px; 
+			background-color: black; 
+			color: white; 
+			font-size: 24px; 
+			font-weight: bold; 
+			border: none; 
+			border-radius: 5px; 
+		} 
+		
+		input[type="text"] { 
+			padding: 20px 30px; 
+			font-size: 24px; 
+			font-weight: bold; 
+			border: none; 
+			border-radius: 5px; 
+			border: 2px solid black; 
+		} 
+	</style> 
+</head> 
+
+<body> 
+    
+
+	
+	<table id="calc"> 
+		<tr> 
+			<td colspan="3"> 
+				<input type="text" id="res"> 
+			</td> 
+			<td><input type="button" value="AC" onclick = "Clear('AC')" ></td> 
+		</tr> 
+
+		<tr> 
+			<td><input type="button" value="9" onclick = "Solve('9')"></td> 
+			<td><input type="button" value="8" onclick = "Solve('8')"></td> 
+			<td><input type="button" value="7" onclick = "Solve('7')"></td> 
+			<td><input type="button" value="+" onclick = "Solve('+')"></td> 
+			
+		</tr> 
+		<tr> 
+			<td><input type="button" value="4" onclick = "Solve('4')"></td> 
+			<td><input type="button" value="5" onclick = "Solve('5')"></td> 
+			<td><input type="button" value="6" onclick = "Solve('6')"></td> 
+			<td><input type="button" value="-" onclick = "Solve('-')"></td> 
+		</tr> 
+		<tr> 
+			<td><input type="button" value="1" onclick = "Solve('1')"></td> 
+			<td><input type="button" value="2" onclick = "Solve('2')"></td> 
+			<td><input type="button" value="3" onclick = "Solve('3')"></td> 
+			<td><input type="button" value="/" onclick = "Solve('/')"></td> 
+		</tr> 
+		<tr> 
+			<td><input type="button" value="." onclick = "Solve('.')"></td> 
+			<td><input type="button" value="0" onclick = "Solve('0')"></td> 
+			<td><input type="button" value="=" onclick = "Result()"></td> 
+			<td><input type="button" value="*" onclick = "Solve('*')"></td> 
+		</tr> 
+	</table> 
+</body> 
+<script src = "Calculator.js" ></script>
+</html> 

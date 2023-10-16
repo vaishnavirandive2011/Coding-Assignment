@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <div>
+<h1 id="title"> <center>Customer Survey Form </center></h1>
+    
+<style> 
+    table { 
+        border: 2px solid black; 
+        margin-left: auto; 
+        margin-right: auto; 
+        background-color: white;
+    } 
+    body{
+background-color: skyblue;
+display: grid;
+height: 100vh;
+place-items: center;
+}
+</style>
+
+<form>
+    <table>
+        <tr>
+            <td>
+                <label for="fname">First Name</label>
+            
+
+                <input type="text" id="fname" name="username">
+                <td>
+        
+                <label for="lname">Last Name</label>
+    
+                <input type="text" id="lname" name="username">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label for="uemail">Email</label>
+                 <input type="text" id="uemail" name="usermail">
+                <td>
+            
+                <label for="MobileNum">Mobile No</label>
+                <input type="text" name="usermobile" id="MobileNum" size="10" maxlength="10">
+            </td>
+        </tr>
+        
+        <tr>
+            <td>
+                <label for="prof">Profession</label>
+                 <input type="text" id="prof">
+            <td>
+    
+                <label for="DOB">DOB</label>
+                <input type="date" name="userDOB" id="DOB">
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                <label for="Country">Country</label>
+                <select id="country" name="Country">
+                    <option disabled selected>--Choose Country--</option>
+                       
+                            <option>America</option>
+                            <option>Canada</option>
+                            <option>Germany</option>
+                            <option>India</option>
+                            <option>Japan</option>
+                            
+                </td>
+        </tr>
+        
+        <tr>
+            <td>
+                <label>Gender</label>
+            
+                <label for="male">
+                    <input type="checkbox" class="radio" value ="1" name="fooby[1][]"/> Male
+                </label>
+                <label for="female">
+                    <input type="checkbox" class="radio"  value ="1" name="fooby[1][]"/> Female
+                </label>
+                
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                <p> Is this first time You are using our products & service? </p>
+                <input type="radio" name = "ans" value="yes"> Yes 
+                <input type="radio" name = "ans" value="no"> No 
+            </td>
+        </tr>
+        
+        <tr>
+            <td>
+                <p> Would you suggestion to your friends and colleague? </p>
+                <input type="radio" name = "ans" value="yes"> Yes 
+                <input type="radio" name = "ans" value="no"> No 
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                <p> How satisfied are you with our company overall? </p>
+                <input type="radio" name = "ans" value="Satisfied"> Satisfied
+                <input type="radio" name = "ans" value="Undecided"> Undecided
+                <input type="radio" name = "ans" value="Unsatisfied"> Unsatisfied
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                <label>Do you have suggestion to improve our service?</label>
+            </td>
+        </br>
+        <td>
+
+        <textarea name="comment" id="comment" placeholder="Enter your comment here">
+                </textarea>
+                </td>
+            
+        </tr>
+            <td>
+                <input type="submit" value="Submit">
+                <input type="reset">
+            </td>
+        </tr>
+        
+    </table>
+</form>
